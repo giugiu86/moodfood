@@ -3,8 +3,8 @@ body{
 }
 
 
-/*Section 1*/
-#section_1 {
+/*Section Uvp*/
+#section_uvp {
   background-color: #fcebe1;
   font-size: 100%;
   color: rgb(45, 51, 75);
@@ -29,7 +29,7 @@ body{
 .h1_uvp {
   color: #2D334B;
   font-weight: bold;
-  font-size: 360%;
+  font-size: 300%;
   margin-bottom: 5%;
 }
 
@@ -46,7 +46,7 @@ body{
 }
 
 .div_uvp {
-  padding-right: 6rem;
+  padding-right: 5rem;
   margin: 0 auto 0 auto;
 }
 
@@ -58,6 +58,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .btn {
@@ -125,4 +127,12 @@ body{
     justify-content: center;
   }
 
+}
+
+/*Section How Works*/
+#section_how_works {
+  background-color: #fcebe1;
+  font-size: 100%;
+  color: rgb(45, 51, 75);
+  padding: 0% 12%;
 }
