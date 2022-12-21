@@ -17,9 +17,10 @@ h2 {
   text-align:center;
   color: #2D334B;
   font-weight: bold;
-  font-size: 130%;
+  font-size: 120%;
   margin-top: 2.5%;
   margin-bottom: 10%;
+  display: block;
 }
 
 /*Section Uvp*/
@@ -139,6 +140,10 @@ h2 {
     justify-content: center;
   }
 
+ .div_how_works {
+   margin-left: 2.5rem;
+  }
+
 }
 
 /*Section How Works*/
@@ -170,29 +175,73 @@ h2 {
   margin-bottom: 5%;
 }
 
-.div_mood{
-  padding: 0% 5%;
+
+
+.div_mood {
+  background-color: #fcebe1;
+  border: 0.2rem solid #fcebe1;
+  padding: 5% 5%;
+  margin: 1% 1% 1% auto;
+  width: 24%;
+  display: inline-grid;
+  min-width: 260px;
+}
+
+.div_like {
+  background-color: white;
+  border: 0.2rem solid #fcebe1;
+  padding: 5% 5%;
+  margin: 1% 1% 1% auto;
+  width: 24%;
+  display: inline-grid;
+  min-width: 260px;
+}
+
+.div_organize {
+  background-color: white;
+  border: 0.2rem solid #fcebe1;
+  padding: 5% 5%;
+  margin: 1% 1% 1% auto;
+  width: 24%;
+  display: inline-grid;
+  min-width: 260px;
+}
+
+.div_cook {
+  background-color: white;
+  border: 0.2rem solid #2D334B;
+  padding: 5% 5%;
+  margin: 1% auto 1% 0%;
+  width: 24%;
+  display: inline-grid;
+  min-width: 260px;
 }
 
 .div_icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 0% 15% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*  padding: 5% 2% 5% 2%;*/
 }
 
-.icon{
-    background: #FF7A59;
-    border-color: black;
-    border-width: thin;
-    width: 3.5rem;
-    height: 3.5rem;
+.icon {
+    background-color: inherit;
+    width: 3.8rem;
+    height: 3.8rem;
     border-radius: 50%;
-    display: flex;
+    margin-bottom: 10%;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
+.mood{
+    border: 0.15rem solid white;
+}
+
+.like{
+    border: 0.15rem solid #2D334B;
+}
 
 
 .div_section_color {
