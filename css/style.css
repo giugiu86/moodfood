@@ -131,43 +131,6 @@ h2 {
 }
 
 
-/*Media: minor than 1028 pixel the media function will be applied*/
- @media (max-width: 1028px) {
-
-   .h1_uvp {
-     font-size: 250%;
-     margin-bottom: 5%;
-   }
-
-  .div_uvp {
-    padding: 0px;
-    margin: 0 auto 0 auto;
-    text-align: center;
-  }
-
-  .div_img_main {
-    padding: 0px;
-    margin: 0 auto 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .h1_description {
-    color: #666666;
-    font-size: 200%;
-    margin-bottom: 5%;
-    text-align: center;
-  }
-
-  .h1_centered {
-    text-align:center;
-    font-size: 200%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-}
-
 /*Section How Works*/
 #section_how_works {
   background-color: #ffffff;
@@ -278,4 +241,90 @@ h2 {
   height: 8rem;
   padding: 0px;
   margin: 0px;
+}
+
+
+/*Media: minor than 1028 pixel the media function will be applied*/
+ @media (max-width: 1028px) {
+
+   .h1_uvp {
+     font-size: 250%;
+     margin-bottom: 5%;
+   }
+
+  .div_uvp {
+    padding: 0px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
+
+  .div_img_main {
+    padding: 0px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h1_description {
+    color: #666666;
+    font-size: 200%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .h1_centered {
+    text-align:center;
+    font-size: 200%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .div_mood {
+    background-color: #fcebe1;
+    border: 0.1rem solid #fcebe1;
+    padding: 5% 4%;
+    margin: 1% auto 5% auto;
+    width: 24%;
+    height: 28rem;
+    display: inline-grid;
+    min-width: 260px;
+    border-radius: 3%;
+  }
+
+  .div_like {
+    background-color: white;
+    border: 0.1rem solid #fcebe1;
+    padding: 5% 4%;
+    margin: 1% auto 5% auto;
+    width: 24%;
+    height: 28rem;
+    display: inline-grid;
+    min-width: 260px;
+    border-radius: 3%;
+  }
+
+  .div_organize {
+    background-color: white;
+    border: 0.1rem solid #fcebe1;
+    padding: 5% 4.2%;
+    margin: 1% auto 5% auto;
+    width: 24%;
+    height: 28rem;
+    display: inline-grid;
+    min-width: 260px;
+    border-radius: 3%;
+  }
+
+  .div_cook {
+    background-color: white;
+    border: 0.1rem solid #2D334B;
+    padding: 5% 4%;
+    margin: 1% auto 5% auto;
+    width: 24%;
+    height: 28rem;
+    display: inline-grid;
+    min-width: 260px;
+    border-radius: 3%;
+  }
 }
