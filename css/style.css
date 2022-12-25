@@ -38,6 +38,14 @@ h2 {
   padding: 5% 12%;
 }
 
+#section_mission {
+  background-color: #fcebe1;
+  font-size: 100%;
+  color: rgb(45, 51, 75);
+  padding: 0% 12%;
+}
+
+
 /*Headings*/
 .h1_uvp {
   font-size: 300%;
@@ -55,6 +63,13 @@ h2 {
   font-size: 230%;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.h1_padded {
+  text-align:center;
+  font-size: 230%;
+  padding: 2.5% 10%;
+  line-height: 1.5;
 }
 
 /*Paragraph*/
