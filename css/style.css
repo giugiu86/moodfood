@@ -35,7 +35,7 @@ h2 {
   background-color: #ffffff;
   font-size: 100%;
   color: rgb(45, 51, 75);
-  padding: 5% 12%;
+  padding: 2.5% 12%;
 }
 
 #section_mission {
@@ -110,6 +110,13 @@ h2 {
   margin: 0 auto 0 auto;
 }
 
+.img_collaboration {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  margin: 0 auto 0 auto;
+}
+
 /*Containers*/
 
 .div_img_logo {
@@ -131,6 +138,10 @@ h2 {
   justify-content: center;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.div_h1_description  {
+  padding-right: 7%;
 }
 
 .div_img_why {
@@ -306,7 +317,14 @@ h2 {
     text-align:center;
     font-size: 200%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+  }
+
+  .h1_padded {
+    text-align:center;
+    font-size: 200%;
+    padding: 5% 2.5%;
+    line-height: 1.5;
   }
 
   .div_mood {
@@ -336,4 +354,8 @@ h2 {
     padding: 5% 4%;
     margin: 1% auto 5% auto;
   }
+
+.img_collaboration {
+  padding-top: 10%;
+}
 }
