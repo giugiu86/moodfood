@@ -13,9 +13,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-  const randombandname=generate().spaced; //generate random name and adjective
+  const contact_name=req.body["contact_name"];
   //console.log(randombandname);
-  res.render("index.ejs",{randombandname_ejs:randombandname});
+  res.render("thankyou.ejs",{contact_name_ejs:contact_name});
 });
 
 

@@ -38,6 +38,7 @@ h2 {
   font-size: 100%;
   color: rgb(45, 51, 75);
   padding: 0% 15%;
+    z-index: -1;
 }
 
 #section_uvp {
@@ -74,6 +75,14 @@ h2 {
   color: rgb(45, 51, 75);
   padding: 0% 20%;
 }
+
+#section_thankyou {
+  background-color: #fcebe1;
+  font-size: 100%;
+  color: rgb(45, 51, 75);
+  padding: 8.5% 12%;
+}
+
 /*Headings*/
 .h1_uvp {
   font-size: 300%;
@@ -98,6 +107,12 @@ h2 {
   font-size: 230%;
   padding: 2.5% 10%;
   line-height: 1.5;
+}
+
+.h1_thankyou {
+  font-size: 230%;
+  margin-bottom: 5%;
+  padding-top: 5%;
 }
 
 .h2_left{
@@ -404,7 +419,7 @@ form {
   margin-top: 50px;
 }
 
-.feedback-input {
+.text-input {
   color: black;
   font-weight: 500;
   font-size: 18px;

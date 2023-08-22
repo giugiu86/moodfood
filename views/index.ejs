@@ -182,11 +182,11 @@
                 Vuoi conoscere di più del mondo MoodFood? Scrivici!
                 </h1>
                   <!-- Input form contact-->
-                <form>
-                  <input name="name" type="text" class="feedback-input" placeholder="Nome" />
-                  <input name="email" type="email" class="feedback-input" placeholder="Email (obbligatorio)" required  oninvalid="this.setCustomValidity('Per favore inserisci un\'email valida')"
+                <form  action="/submit" method="POST">
+                  <input name="contact_name" type="text" class="text-input" placeholder="Nome" />
+                  <input name="contact_email" type="email" class="text-input" placeholder="Email (obbligatoria)" required  oninvalid="this.setCustomValidity('Per favore inserisci un\'email valida')"
                    oninput="setCustomValidity('')")/>
-                  <textarea name="text" class="feedback-input" placeholder="Messaggio" maxlength ="2000"></textarea>
+                  <textarea name="contact_text" class="text-input" placeholder="Messaggio" maxlength ="2000"></textarea>
                   <input class="submit" type="submit" value="INVIA ✉" />
                 </form>
                 </div>
