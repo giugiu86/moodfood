@@ -29,9 +29,15 @@ h2 {
   font-size: 100%;
   color: rgb(45, 51, 75);
   padding: 0% 12%;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+  /*position: fixed;
+  z-index: 1;*/
+}
+
+#section_footer {
+  background-color: grey;
+  font-size: 100%;
+  color: rgb(45, 51, 75);
+  padding: 0% 15%;
 }
 
 #section_uvp {
@@ -132,6 +138,23 @@ h2 {
   object-fit: fill;
   margin: 0 auto 0 auto;
 }
+
+.img_badge {
+  object-fit: fill;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.premium {
+  width: 30%;
+  height: 80%;
+}
+
+.builder {
+  width: 50%;
+  height: 30%;
+}
+
 
 /*Containers*/
 
