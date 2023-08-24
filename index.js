@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
-app.use(express.static("moodfood/public")); //to define the path of the style css file
+app.use(express.static("public")); //to define the path of the style css file
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
