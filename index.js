@@ -7,7 +7,7 @@ import { createRoot } from "react-dom/client";
 
 
 const app = express();
-const port = 3000
+const port = 3389
 
 app.use(express.static("public")); //to define the path of the static files, i.e. style css and image file
 
