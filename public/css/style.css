@@ -228,10 +228,10 @@ h2 {
 
 
 .div_how_it_works {
-  width: 24%;
-  height: 28rem;
+  width: 23%;
+  height: 30rem;
   display: inline-grid;
-  min-width: 260px;
+  min-width: 225px;
   border-radius: 3%;
 }
 
