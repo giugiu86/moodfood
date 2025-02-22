@@ -14,7 +14,7 @@
 <!-- Icons -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- My css file -->
-  <link rel="stylesheet" href="css/style.css">
+<link id="id_link_css" rel="stylesheet" href="path_css_placeholder">
 </head>
 
 <body>
@@ -33,13 +33,34 @@
           <a class="btn" href="/">Torna alla Home ➜ </a>
           </div>
           <div class="div_img_main col-lg-6">
-              <img class="img_main" src="images/img_thank_you.jpeg" alt="Thank You Image">
+              <img id="id_img_thankyou" class="img_main" src="path_img_placeholder" alt="Thank You Image">
+              <script>
+                 document.addEventListener("DOMContentLoaded", function() {
+                   const c_path_img = "<%= path_img %>"+"img_thank_you.jpeg";
+                   var imgElement = document.getElementById("id_img_thankyou");
+                   if (imgElement) {
+                     imgElement.src = c_path_img;
+                   } else {
+                   console.error("Element with id 'path_img' not found.");
+                 }
+               });
+             </script>
           </div>
       </div>
     </div>
   </section>
-  <%- include("footer.ejs") %>
-<!-- <iframe src="https://www.cucina-naturale.it/ricette/finocchi-e-borlotti-su-hummus-di-fagioli/" title="Cucina Naturale" width="1000" height="500"></iframe> -->
+    <%- include("footer.ejs", {path_css: path_css}) %>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const c_path_css ="<%= path_css %>"+"style.css";
+        var linkElement = document.getElementById("id_link_css");
+        if (linkElement) {
+          linkElement.href = c_path_css;
+        } else {
+        console.error("Element with id 'path_css' not found.");
+      }
+      });
+  </script>
 </body>
 
 </html>

@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MoodFood</title>
-  <link rel="icon" href="images/img_icon.png" type="image/icon type">
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -14,7 +12,7 @@
 <!-- Icons -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- My css file -->
-  <link rel="stylesheet" href="css/style.css">
+<link id="id_link_css" rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,17 +20,53 @@
   <section id="section_footer">
           <div class="container-fluid">
             <div class="row">
-                <div class="div_img_why col-lg-4">
-                  <a href="https://www.facebook.com/moodfoodproject/"><i class="fa-brands fa-facebook" style="font-size: 3em; color:blue"></i></a>
+                <div class="div_img_why col-lg-3">
+                  <a href="https://www.facebook.com/moodfoodproject/" target="_blank"><i class="fa-brands fa-square-facebook" style="font-size: 2.5em; color: #49525f;"></i></a>
                 </div>
-                <div class="div_img_why col-lg-4">
-                  <img  class="img_badge premium" src="images/badge_premium.png" alt="Image badge premium">
+                <div class="div_img_why col-lg-3">
+                  <a href="https://www.instagram.com/moodfoodproject?igsh=MTFoNjY4aG82MnF5dA==" target="_blank"><i class="fa-brands fa-square-instagram" style="font-size: 2.5em; color: #49525f;"></i></a>
                 </div>
-                <div class="div_img_why col-lg-4">
-                  <img class="img_badge builder" src="images/badge_builder.png" alt="Image badge builder">
+                <div class="div_img_why col-lg-3">
+                  <img id="id_img_badge_club" class="img_badge premium" src="path_img_placeholder" alt="Image badge club">
+                  <script>
+                     document.addEventListener("DOMContentLoaded", function() {
+                       const c_path_img = "<%= path_img %>"+"badge_club.png";
+                       var imgElement = document.getElementById("id_img_badge_club");
+                       if (imgElement) {
+                         imgElement.src = c_path_img;
+                       } else {
+                       console.error("Element with id 'path_img' not found.");
+                     }
+                   });
+                 </script>
+                </div>
+                <div class="div_img_why col-lg-3">
+                  <img id="id_img_badge_builder" class="img_badge builder" src="path_img_placeholder" alt="Image badge builder">
+                  <script>
+                     document.addEventListener("DOMContentLoaded", function() {
+                       const c_path_img = "<%= path_img %>"+"badge_builder.png";
+                       var imgElement = document.getElementById("id_img_badge_builder");
+                       if (imgElement) {
+                         imgElement.src = c_path_img;
+                       } else {
+                       console.error("Element with id 'path_img' not found.");
+                     }
+                   });
+                 </script>
                 </div>
             </div>
   </section>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const c_path_css ="<%= path_css %>"+"style.css";
+        var linkElement = document.getElementById("id_link_css");
+        if (linkElement) {
+          linkElement.href = c_path_css;
+        } else {
+        console.error("Element with id 'path_css' not found.");
+      }
+      });
+  </script>
 </body>
 
 </html>

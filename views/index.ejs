@@ -1,11 +1,29 @@
 <!doctype html>
 <html lang="it">
 
+<script type="text/javascript">
+var _iub = _iub || [];
+_iub.csConfiguration = {"siteId":2364973,"cookiePolicyId":90535964,"lang":"it","storage":{"useSiteId":true}};
+</script>
+<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/2364973.js"></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MoodFood</title>
-  <link rel="icon" href="images/img_icon.png" type="image/icon type">
+  <link id="id_link_icon" rel="icon" href="path_img_placeholder" type="image/icon type">
+  <script>
+     document.addEventListener("DOMContentLoaded", function() {
+       const c_path_img = "<%= path_img %>"+"img_icon.png";
+       var linkElement = document.getElementById("id_link_icon");
+       if (linkElement) {
+         linkElement.href = c_path_img;
+       } else {
+       console.error("Element with id 'path_img' not found.");
+     }
+   });
+ </script>
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -14,11 +32,11 @@
 <!-- Icons -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- My css file -->
-  <link rel="stylesheet" href="css/style.css">
+<link id="id_link_css" rel="stylesheet" href="path_css_placeholder">
 </head>
 
 <body>
-  <%- include("header.ejs") %>
+   <%- include("header.ejs") %>
 <!-- Section uvp    -->
   <section id="section_uvp">
       <!-- Uvp -->
@@ -31,7 +49,18 @@
             <a class="btn" href="#section_how_works">Scopri di più</a>
           </div>
           <div class="div_img_main col-lg-6">
-              <img class="img_main" src="images/img_main.jpeg" alt="Main Image">
+              <img class="img_main" id="id_img_main" src="img_main_placeholder" alt="Main Image">
+              <script>
+                 document.addEventListener("DOMContentLoaded", function() {
+                   const c_path_img = "<%= path_img %>"+"img_main.jpeg";
+                   var imgElement = document.getElementById("id_img_main");
+                   if (imgElement) {
+                     imgElement.src = c_path_img;
+                   } else {
+                   console.error("Element with id 'path_img' not found.");
+                 }
+               });
+             </script>
           </div>
       </div>
     </div>
@@ -42,7 +71,7 @@
     <section id="section_how_works">
       <div class="container-fluid">
         <!-- Introduction -->
-        <div class="row">
+        <div class="row main_div_how_it_works">
             <div class="div_h1_description col-lg-6">
               <h1 class="h1_description">
                 Un menù semplice da realizzare, equilibrato e vario
@@ -146,7 +175,18 @@
             <div>
             <div class="row">
                 <div class="div_img_why col-lg-4">
-                  <img class="img_main" src="images/img_chef.jpeg" alt="Image Chef">
+                  <img id="id_img_chef" class="img_main" src="img_chef_placeholder" alt="Image Chef">
+                  <script>
+                     document.addEventListener("DOMContentLoaded", function() {
+                       const c_path_img = "<%= path_img %>"+"img_chef.jpeg";
+                       var imgElement = document.getElementById("id_img_chef");
+                       if (imgElement) {
+                         imgElement.src = c_path_img;
+                       } else {
+                       console.error("Element with id 'path_img' not found.");
+                     }
+                   });
+                 </script>
                 </div>
                 <div class="div_p_why col-lg-4">
                   <h2 class="h2_left">
@@ -154,7 +194,18 @@
                   <p class="p_description">Puoi organizzare la preparazione dei tuoi pasti in modo semplice e funzionale per non avere più fretta davanti ai fornelli e poter esprimere al meglio la tua passione e creatività!<br><br><br></p>
                 </div>
                 <div class="div_img_why col-lg-4">
-                  <img class="img_main" src="images/img_liberta.jpeg" alt="Image Libertà">
+                  <img id="id_img_liberta" class="img_main" src="img_liberta_placeholder" alt="Image Libertà">
+                  <script>
+                     document.addEventListener("DOMContentLoaded", function() {
+                       const c_path_img = "<%= path_img %>"+"img_liberta.jpeg";
+                       var imgElement = document.getElementById("id_img_liberta");
+                       if (imgElement) {
+                         imgElement.src = c_path_img;
+                       } else {
+                       console.error("Element with id 'path_img' not found.");
+                     }
+                   });
+                 </script>
                 </div>
             </div>
             <div class="row">
@@ -163,7 +214,18 @@
                 <p class="p_description">Finalmente hai la completa libertà di modificare le frequenze degli alimenti come desideri. Mangiar sano è un viaggio, un'esplorazione alimentare libera e consapevole in cui MoodFood avrà il piacere di accompagnarti.<br></p>
               </div>
                   <div class="div_img_why col-lg-4">
-                    <img class="img_collaboration" src="images/img_collaborazione.jpeg" alt="Image Collaborazione">
+                    <img id="id_img_collaborazione" class="img_collaboration" src="images/img_collaborazione.jpeg" alt="Image Collaborazione">
+                    <script>
+                       document.addEventListener("DOMContentLoaded", function() {
+                         const c_path_img = "<%= path_img %>"+"img_collaborazione.jpeg";
+                         var imgElement = document.getElementById("id_img_collaborazione");
+                         if (imgElement) {
+                           imgElement.src = c_path_img;
+                         } else {
+                         console.error("Element with id 'path_img' not found.");
+                       }
+                     });
+                   </script>
                   </div>
               <div class="div_p_why col-lg-4">
                   <h2 class="h2_left">Insieme a te</h2>
@@ -187,15 +249,28 @@
                   <input name="contact_email" type="email" class="text-input" placeholder="Email (obbligatoria)" required  oninvalid="this.setCustomValidity('Per favore inserisci un\'email valida')"
                    oninput="setCustomValidity('')")/>
                   <textarea name="contact_text" class="text-input" placeholder="Messaggio" maxlength ="2000"></textarea>
+                  <input type="text" id="NONACCEDIBOT" name="NONACCEDIBOT" class="hidden">
                   <input class="submit" type="submit" value="INVIA ✉" />
                 </form>
-                </div>
+                <br>
+                <p><a href="/privacypolicy" target="_blank">Privacy Policy</a></p>
+            </div>
         </div>
 </section>
 <div class="div_section_white">
 </div>
-  <%- include("footer.ejs") %>
-<!-- <iframe src="https://www.cucina-naturale.it/ricette/finocchi-e-borlotti-su-hummus-di-fagioli/" title="Cucina Naturale" width="1000" height="500"></iframe> -->
+  <%- include("footer.ejs", {path_css: path_css}) %>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const c_path_css ="<%= path_css %>"+"style.css";
+      var linkElement = document.getElementById("id_link_css");
+      if (linkElement) {
+        linkElement.href = c_path_css;
+      } else {
+      console.error("Element with id 'path_css' not found.");
+    }
+    });
+</script>
 </body>
 
 </html>
