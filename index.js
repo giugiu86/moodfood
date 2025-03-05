@@ -30,16 +30,22 @@ app.post("/submit", (req, res) => {
   const contact_name=req.body["contact_name"];
   const contact_email=req.body["contact_email"];
   const contact_text=req.body["contact_text"];
+  const contact_bot=req.body["NONACCEDIBOT"];
   //console.log(contact_name);
   res.render("thankyou.ejs",{contact_name_ejs:contact_name, path_img:path_img, path_css:path_css}); //contact_name_ejs variable used in ejs
+
   var form_data = {
     contact_email: contact_email,
     contact_name: contact_name,
-    contact_text: contact_text
+    contact_text: contact_text,
+    contact_bot: contact_bot
    }
-  var today=new Date().toLocaleString();
-  var contact_data=today+";"+contact_email+";"+contact_name+';'+contact_text+"\n"
-  fs.appendFileSync('./contacts_messages.txt',contact_data); //save data in filex
+   if (contact_bot  === "")
+   {
+     var today=new Date().toLocaleString();
+     var contact_data=today+";"+contact_email+";"+contact_name+';'+contact_text+"\n"
+     fs.appendFileSync('./contacts_messages.txt',contact_data); //save data in filex
+   }
 });
 
 app.get('/privacypolicy', (req, res) => {
