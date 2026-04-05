@@ -8,6 +8,7 @@ p {
   color: #666666;
 }
 
+
 h1 {
   color: #2D334B;
   font-weight: bold;
@@ -21,6 +22,15 @@ h2 {
   margin-top: 2.5%;
   margin-bottom: 10%;
   display: block;
+}
+
+li {
+  line-height: 2;
+  font-size: 1rem;
+  color: #666666;
+  padding-inline-start: 4px;
+  list-style-position: inside;
+  padding: 0% 0%;
 }
 
 /*Sections*/
@@ -37,7 +47,7 @@ h2 {
   background-color: #d3d3d3;
   font-size: 100%;
   color: rgb(45, 51, 75);
-  padding: 0% 15%;
+  padding: 1% 15%;
     z-index: -1;
   height: 100%;
 }
@@ -114,7 +124,7 @@ h2 {
   color: #666666;
   text-align:center;
   font-size: 230%;
-  padding: 2.5% 10%;
+  padding: 20% 10%;
   line-height: 1.5;
 }
 
@@ -135,8 +145,15 @@ h2 {
   text-align: justify;
 }
 
+.p_description_list {
+  text-align: justify;
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+
 .p_description_centered {
   text-align: center;
+  margin-bottom: 5%;
 }
 
 .p_uvp {
@@ -242,7 +259,7 @@ h2 {
 
 .div_how_it_works {
   width: 23%;
-  height: 30rem;
+  height: 32rem;
   display: inline-grid;
   min-width: 225px;
   border-radius: 3%;
@@ -420,8 +437,9 @@ h2 {
 
   .h1_padded {
     text-align:center;
-    font-size: 200%;
-    padding: 5% 2.5%;
+	justify-content: center;
+    font-size: 225%;
+    padding: 10% 2.5%;
     line-height: 1.5;
   }
 
