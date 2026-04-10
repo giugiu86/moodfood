@@ -8,17 +8,27 @@ import domino from "domino";
 var Element = domino.impl.Element; // etc
 var document = domino.createDocument('http://localhost', true)
 
-const path_img= "images/";  // to change in the cloud server 'public/images/'
-const path_css= "css/";  // to change in the cloud server 'public/css/'
+const environment="dev"; 
+var path_css=""
+var path_img= ""
+
+if (environment === "dev") {
+      path_css = "/css/";
+	  path_img= "/images/";
+} else {
+      path_css = "/public/css/";
+	  path_img= "/public/images/";
+}
+
+console.log(path_css);
+console.log(path_img);
+
 const app = express();
 const port = 3000
 
 app.use(express.static("public")); //to define the path of the static files, i.e. style css and image file
 
 app.use(bodyParser.urlencoded({ extended: true }));//mandatory if I want to use req.body
-
-console.log(path_css);
-console.log(path_img);
 
 //if nothing happen the main index page is render
 app.get("/", (req, res) => {
