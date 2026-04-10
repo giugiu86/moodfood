@@ -430,7 +430,7 @@ li {
 
   .h1_centered {
     text-align:center;
-    font-size: 200%;
+    font-size: 150%;
     margin-top: 5%;
     margin-bottom: 10%;
   }
@@ -438,7 +438,7 @@ li {
   .h1_padded {
     text-align:center;
 	justify-content: center;
-    font-size: 225%;
+    font-size: 150%;
     padding: 10% 2.5%;
     line-height: 1.5;
   }
@@ -473,6 +473,12 @@ li {
 
 .img_collaboration {
   padding-top: 10%;
+}
+
+.builder {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 }
 
