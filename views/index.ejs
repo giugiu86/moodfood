@@ -11,8 +11,11 @@ _iub.csConfiguration = {"siteId":2364973,"cookiePolicyId":90535964,"lang":"it","
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>"MoodFood, ricette facili e gustose"</title>
+  <title>MoodFood, ricette facili e gustose</title>
   <meta name="description" content="MoodFood, l'app che finalmente ti aiuta ad organizzare il tuo menù con ricette facili e gustose, rispettando il tuo mood">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https:///www.moodfoodproject.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link id="id_link_icon" rel="icon" href="path_img_placeholder" type="image/icon type">
   <script>
      document.addEventListener("DOMContentLoaded", function() {
@@ -33,7 +36,7 @@ _iub.csConfiguration = {"siteId":2364973,"cookiePolicyId":90535964,"lang":"it","
 <!-- Icons -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- My css file -->
-<link id="id_link_css" rel="stylesheet" href="path_css_placeholder">
+<link id="id_link_css" rel="stylesheet" href="<%= path_css%>style.css">
 </head>
 
 <body>
@@ -76,7 +79,7 @@ _iub.csConfiguration = {"siteId":2364973,"cookiePolicyId":90535964,"lang":"it","
         <div class="row main_div_how_it_works">
             <div class="div_h1_description col-lg-6">
               <h1 class="h1_description">
-                Un menù semplice da realizzare e stimolante!
+                Un menù facile da creare e stimolante!
               </h1>
             </div>
             <div class="col-lg-6">
@@ -109,7 +112,7 @@ _iub.csConfiguration = {"siteId":2364973,"cookiePolicyId":90535964,"lang":"it","
              </span>
             </div>
            </div>
-            <h2 style="font-size: 120%;">Cosa ti piace?</h2>
+            <h2>Cosa ti piace?</h2>
             <p class="p_description_centered">Lasciati ispirare dalle tantissime ricette disponibili e salva quelle che ti attraggono di più.<br>Vogliamo appagare il tuo gusto!</p><br><br><br>
           </div>
           <div class="div_how_it_works div_organize">
@@ -120,7 +123,7 @@ _iub.csConfiguration = {"siteId":2364973,"cookiePolicyId":90535964,"lang":"it","
               </span>
             </div>
            </div>
-            <h2 style="font-size: 120%;">Quali pasti vuoi programmare?</h2>
+            <h2>Quali pasti vuoi programmare?</h2>
             <p class="p_description_centered">Scegli tu quanti e quali pasti vuoi programmare per il tuo menù.<br>Vogliamo che tu abbia una vita sociale!</p><br><br><br>
           </div>
           <div class="div_how_it_works div_cook">
@@ -131,7 +134,7 @@ _iub.csConfiguration = {"siteId":2364973,"cookiePolicyId":90535964,"lang":"it","
               </span>
             </div>
            </div>
-            <h2 style="font-size: 120%;">Goditi la spesa</h2>
+            <h2>Goditi la spesa</h2>
             <p class="p_description_centered">Ottieni la lista della spesa suddivisa per corsie del supermercato.<br>Vogliamo che il momento dell'acquisto sia senza stress e sprechi!</p>
           </div>
         </div>
@@ -275,17 +278,6 @@ _iub.csConfiguration = {"siteId":2364973,"cookiePolicyId":90535964,"lang":"it","
 <div class="div_section_white">
 </div>
   <%- include("footer.ejs", {path_css: path_css}) %>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const c_path_css ="<%= path_css %>"+"style.css";
-      var linkElement = document.getElementById("id_link_css");
-      if (linkElement) {
-        linkElement.href = c_path_css;
-      } else {
-      console.error("Element with id 'path_css' not found.");
-    }
-    });
-</script>
 </body>
 
 </html>
